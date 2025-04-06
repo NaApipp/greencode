@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+        <!--Boostrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--Title-->    
+    <title>GreenCode | Form Accept</title>
+
+    <!--Connect To Css-->
+    <link rel="stylesheet" href="asset/css/style-form.css">
+    <link rel="stylesheet" href="asset/css/style.css">
+
+    <!--setting icon footer-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!--Favicon-->
+    <link rel="shortcut icon" href="asset\image\img-logo\Logo.png" type="image/x-icon">
+    
+</head>
+
+<!--Style-->
+<style>
+    .hero{
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 10.0), rgba(0, 0, 0, 0)), url('asset/image/bg-image/bg-form.jpg');
+    }
+    .fixed-top{
+      position:fixed;top:0;right:0;left:0;z-index:1030
+      }
+      .accept {
+        padding: 20px;
+        padding-top: 70px;
+      }
+      .btn-acc {
+ --color: #00A97F;
+ --color2: rgb(10, 25, 30);
+ padding: 0.8em 1.75em;
+ background-color: transparent;
+ border-radius: 6px;
+ border: .3px solid var(--color);
+ transition: .5s;
+ position: relative;
+ overflow: hidden;
+ cursor: pointer;
+ z-index: 1;
+ font-weight: 300;
+ font-size: 17px;
+ font-family: 'Roboto', 'Segoe UI', sans-serif;
+ text-transform: uppercase;
+ color: var(--color);
+}
+
+.btn-acc::after, .btn-acc::before {
+ content: '';
+ display: block;
+ height: 100%;
+ width: 100%;
+ transform: skew(90deg) translate(-50%, -50%);
+ position: absolute;
+ inset: 50%;
+ left: 25%;
+ z-index: -1;
+ transition: .5s ease-out;
+ background-color: var(--color);
+}
+
+.btn-acc::before {
+ top: -50%;
+ left: -25%;
+ transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.btn-acc:hover::before {
+ transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.btn-acc:hover::after {
+ transform: skew(45deg) translate(-50%, -50%);
+}
+
+.btn-acc:hover {
+ color: var(--color2);
+}
+
+.btn-acc:active {
+ filter: brightness(.7);
+ transform: scale(.98);
+}
+</style>
+
+<body>
+<div class="main-container">
+    <div class="hero">
+            <nav class="navbar navbar-expand-sm bg-light navbar-dark fixed-top">
+                <div class="container-fluid">
+                    <img src="asset\image\img-logo\Logo.png" alt="Avatar Logo" style="width:40px;" class="rounded-pill"> <!--Logo`-->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                        <a class="nav-link" href="index.html#beranda" class="scroll-link"  Style="color: black;">Beranda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#keuntungan" class="scroll-link" Style="color: black;">Keuntungan</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="berita.html" Style="color: black;" >Berita</a>
+                                </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="index.html#about-section"Style="color: black;">Tentang</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="kelola-sampah.html#form" class="scroll-link" Style="color: black;">Kelola sampah</a>
+                        </li>    
+                    </ul>
+                    </div>
+                </div>
+                        </nav>
+                        
+                        <div class="content">
+                            <h1>Mari Mengelola Limbah B3 Untuk Keberlangsungan Hidup</h1>
+                                    <p>GreenCode adalah layanan eksklusif yang hadir dengan program unggulan untuk menyelesaikan permasalahan mengenai sampah B3 yang telah menjadi permasalahan global.</p>
+                            <a href="kelola-sampah.html#form" class="btn ">Kelola sampah</a>
+                        </div>
+        </div>
+
+        <section id="caution">
+            <center>
+              <div data-aos="zoom-in" data-aos-duration="1000">
+              <div class="accept">
+                <h1>Formulir Berhasil Dikirim!</h1>
+                <p>Terima kasih telah menggunakan layanan <span style="color: #009B60;">GreenCode</span>, tunggu di rumah dan 
+                  <br>team kami akan datang untuk mengambil sampah mu.</p>
+                <div class="button-acc">
+                  <button class="btn-acc" onclick="window.location.href='index.html'"> Button </button>
+
+              </div>
+            </div>
+            </center>
+          </div>
+        </section>
+      </div>
+      
+
+    <!------------SECTION Footer-------------->
+<section id="footer">
+  <div class="main-container">
+  <footer class="footer">
+
+    <div data-aos="fade-down" data-aos-duration="1000">
+    <div class="logo-container">
+      <img src="asset\image\img-logo\logo-putih.png" alt="Avatar Logo" style="width:40px;" class="rounded-pill">
+      <span class="logo-text">GreenCode</span>
+    </div>
+  </div>
+    <div class="footer-content">
+      <div data-aos="fade-right" data-aos-duration="1000">
+      <div class="footer-section location">
+        <h3 class="judul-footer">Lokasi</h3>
+        <ul>
+          <li>Semarang</li>
+          <li>Kendal</li>
+          <li>Batang</li>
+          <li>Yogyakarta</li>
+        </ul>
+      </div>
+    </div>
+    <div data-aos="fade-up" data-aos-duration="1000">
+      <div class="footer-section hours">
+        <h3>Jam Pelayanan</h3>
+        <ul>
+          <li>Senin - Kamis: 07.00 - 15.00 WIB</li>
+          <li>Jumat: 07.00 - 11.30 WIB</li>
+          <li>Minggu - Sabtu: 08.00 - 14.00 WIB</li>
+        </ul>
+      </div>
+    </div>
+    <div data-aos="fade-left" data-aos-duration="1000">
+      <div class="footer-section contact">
+        <h3>Hubungi Kami</h3>
+        <ul>
+          <li><i class="fas fa-phone"></i> +62 8888 34214043</li>
+          <li> <a href="mailto:nabilapipp@gmail.com" style="color: white;"><i class="fas fa-envelope"></i>GreenCodeTeam@gmail.com</a></li>
+          <li><i class="fas fa-map-marker-alt"></i>Jl. Soekarno-Hatta, Brangsong, Kec. Brangsong,<br> Kabupaten Kendal, Jawa Tengah 51318</li>
+        </ul>
+      </div>
+    </div>
+    </div>
+    <div class="footer-bottom" >
+      <p >&copy; 2024 GreenCode Team</p>
+    </div>
+    </div>
+  </div>
+  </footer>
+
+    <script src="asset/js/script.js"></script>
+
+    <!--AOS Script-->
+
+</body>
+</html>
+

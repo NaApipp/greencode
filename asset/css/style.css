@@ -1,0 +1,696 @@
+/*Import Font*/
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap'); /*Font Afacad*/
+@import url('https://fonts.googleapis.com/css2?family=Alatsi&display=swap'); /*Font Alatsi*/
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    
+}
+
+.main-container {
+  width: 100%;
+}
+
+
+/*----------CSS Section Beranda----------*/
+.hero {
+    background-size: cover;
+    background-position: center;
+    position:static;
+    color: rgb(255, 255, 255);
+    height: 140vh;
+    text-align: left;
+
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.content {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    float: left;
+    color: white;
+    font-size: 36px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    padding: 5%;
+
+}
+
+.content h1 {
+    font-family: "Afacad";
+    font-weight: bold;
+    text-align: left;
+    font-size: 3.1rem;
+    margin-bottom: 20px;
+    padding-right: 30%;
+    float: left;
+}
+
+.content p {
+    font-family: "Afacad";
+    text-align: left;
+    font-size: 1.49rem;
+    margin-bottom: 30px;
+    padding-right: 45%;
+    float: left;
+}
+
+.btn {
+    position: center;
+    display: inline-block;
+    background-color: #00A86B;
+    color: white;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 13px;
+    float: left;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+    font-family: "Alatsi";
+}
+
+.btn:hover {
+    background-color: #007A55;
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 50%;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+}
+
+.menu div {
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin: 6px 0;
+}
+
+.kenapakami h1{
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    font-family: "afacad";
+    font-weight: bold;
+    
+}
+
+/*----------CSS Cara Menggunakan Layanan----------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+}
+
+.container-layanan {
+  background-image: url('bg-tutorlayanan.jpg');
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  float: center;
+  text-align: center;
+  font-family: "afacad";
+    font-weight: bold;
+}
+
+.steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.langkah {
+  background-image: linear-gradient(to top, rgba(41, 168, 121, 0.589), rgba(255, 255, 255, 0)); 
+  padding: 20px;
+  border-radius: 10px;
+  width: 280px;
+  position: relative;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+}
+
+.langkah h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.langkah p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: white;
+  font-family: "afacad";
+}
+
+.langkah .nomor {
+  position: absolute;
+  top: -20px; /* Sesuaikan posisi vertikal */
+  left: 20px; /* Sesuaikan posisi horizontal */
+  background:#29a879;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.langkahbtn {
+  position: center;
+    display: inline-block;
+    background-color: #00A86B;
+    color: white;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 13px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+    font-family: "Alatsi";
+}
+
+.langkahbtn:hover {
+  background: hsl(162, 100%, 24%);
+}
+
+  .steps {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .langkah {
+      width: 90%;
+  }
+
+.icon {
+  width: 50px; /* Sesuaikan ukuran */
+  height: 50px; /* Sesuaikan ukuran */
+  background-color: #28a745; /* Warna hijau */
+  border-radius: 50%; /* Membuat sisi melengkung menjadi lingkaran */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 0 auto; /* Pusatkan ikon */
+}
+
+.icon span {
+  color: white; /* Warna angka */
+  font-size: 20px; /* Ukuran font */
+  font-weight: bold;
+}
+
+
+
+
+/*----------CSS Navbar----------*/
+
+/*----------Navbar Fixed Top----------*/
+.fixed-top{
+  position:fixed;top:0;right:0;left:0;z-index:1030
+}
+
+
+/* Warna hitam untuk navbar */
+.navbar {
+    background-color: #000; /* Latar belakang hitam */
+    font-family: "alatsi";
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+/* Warna teks navbar */
+.navbar .navbar-brand, 
+.navbar .nav-link {
+    color: #fff; /* Warna teks putih */
+}
+
+/* Warna tombol toggle */
+.navbar-toggler {
+    background-color: #444; /* Tombol toggle abu-abu gelap */
+}
+
+/* Warna toggle saat di-hover */
+.navbar-toggler:hover {
+    background-color: #666; /* Tombol toggle abu-abu lebih terang */
+}
+
+/* Latar belakang hitam untuk menu collapse */
+
+
+/* Warna teks di dalam collapse */
+.navbar-collapse .nav-link {
+    color: #fff; /* Teks putih */
+}
+
+/* Warna teks saat di-hover */
+.navbar-collapse .nav-link:hover {
+    color: #ccc; /* Teks abu-abu terang */
+}
+
+
+/*----------CSS Section Keuntungan----------*/
+
+/*Scroll Animasi*/
+.scroll-1::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  .scroll-1::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background: #888;
+  }
+ 
+  
+
+  .container * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    padding: 24px;
+    scroll-snap-type: x mandatory;
+    scroll-padding-top: 24px;
+    border-radius: 8px;
+    gap: 20px;
+  }
+  
+  .container .card {
+    min-height: 400px;
+    flex: 0 0 33.33%; 
+    align-items: center;
+    overflow: hidden;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #009B60, #009B60);
+  }
+  
+
+  
+  .card .card__content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    
+  }
+  
+  .card .card__content .card__title {
+    font-size: 40px;
+    color: #fff;
+    text-transform: capitalize;
+    font-family: "afacad";
+    font-weight: bold;
+    line-height: 32px;
+  }
+  
+  .card .card__content .card__describe {
+    color: #fff;
+    font-size: 19px;
+    font-family: "afacad";
+  }
+
+  /**-------------CSS CARA KEMAS SAMPAH-------------------*/
+  .hero-cara {
+    background: linear-gradient(to right, #ffffff, #d3f4e5);
+    font-family: Arial, sans-serif;
+  }
+  .container-cara  {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  h3 {
+   font-size: 35px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "afacad";
+    font-weight: bold;
+  }
+  
+  .underline {
+    width: 120px;
+    height: 2px;
+    background-color: #000;
+    margin: 5px auto 20px;
+  }
+  
+  .step {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #ffffff;
+    
+  }
+
+  .step:hover {
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.4);
+    
+  }
+  
+  .step .number {
+    font-family: "afacad";
+    font-weight: bold;
+    font-size: 28px;
+    color: #fff;
+    background: #29a879;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    min-width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+  }
+  
+  .step h2 {
+    font-size: 24px;
+    color: #29a879;
+    margin-bottom: 5px;
+    font-family: "afacad";
+    font-weight: bold;
+  }
+  
+  .step p {
+    font-size: 20px;
+    color: #333;
+    float: left;
+    font-family: "afacad";
+  }
+  
+  @media (min-width: 768px) {
+    .step {
+        flex-direction: row;
+        align-items: center;
+    }
+  
+    .step .text {
+        margin-left: 15px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .step {
+        text-align: center;
+    }
+  
+    .step .text {
+        margin-left: 0;
+    }
+  
+    .step .number {
+        margin: 0 auto;
+    }
+  }
+    /**-------------CSS TENTANG KAMI START-------------------*/
+
+
+  
+    .container-about {
+      max-width: 1200px;
+      height: fit-content;
+      margin: 0 auto;
+    }
+    
+    .title-about {
+      font-size: 40px;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 20px;
+      margin-top: 20px;
+      color: rgb(255, 255, 255);
+      font-family: "afacad";
+      font-weight: bold;
+      text-shadow: #ffffff;
+      text-decoration: underline;
+      text-underline-offset: 10px;
+    }
+  
+    .content-about{
+      text-align: center;
+      font-size: 1.2rem;
+      color: white;
+      font-family: "afacad";
+      position: relative;
+      max-width: 500px;
+      margin: 0 auto; 
+      z-index: 2;
+  }
+    
+    
+  .highlight {
+    color: #006D2C; /* Warna hijau seperti di gambar */
+    font-weight: bold; /* Cetak tebal */
+  }
+  
+    
+    .image-container-about {
+      margin-right: 20px;
+      display: inline ;
+    }
+    
+    .activity-image-about {
+      width: 300px;
+      height: 200px;
+      margin: 10px 0; 
+      border-radius: 10px;
+    }
+      /**-------------CSS TENTANG KAMI END-------------------*/
+
+
+
+    
+  /**-------------CSS FOOTER-------------------*/
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer {
+    background-color: #006D2C;
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 90%;
+    max-width: 1200px;
+  }
+  
+  .footer-section {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+  }
+  
+  .footer-section h3 {
+    border-bottom: 2px solid
+    #fff;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    font-size: 23px;
+    color: #ffffff;
+  }
+
+  .judul-footer {
+    border-bottom: 2px solid#fff;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin: 5px 0;
+    font-size: 17px;
+    font-family: "afacad";
+  }
+  
+  .footer-section ul li i {
+    margin-right: 10px;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 19px;
+    font-family: "Afacad";
+    font-weight: 900;
+  }
+
+  .logo-text {
+    font-family: "afacad";
+    font-weight: bold;
+    font-size: 2.1rem;
+  }
+
+  
+  .logo-container {
+    margin-bottom: 4%;
+    display: flex; /* Mengatur elemen menjadi flexbox */
+    align-items: center;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-section {
+      text-align: center;
+    }
+  }
+  
+
+
+/*Phone Size*/
+@media screen and (max-width: 768px) {
+
+body {
+  width: 100%;
+}
+
+html{
+  width: 100%;
+}
+
+  /*----------Navbar Fixed Top----------*/
+.fixed-top{
+  position:fixed;top:0;right:0;left:0;z-index:1030
+}
+
+.main-container {
+  width: 100%;
+}
+
+.image-container-about {
+  justify-items: center;
+  display: grid;
+}
+
+.hero {
+  height: 100vh;
+}
+
+
+.content{
+  text-align: left;
+  position: absolute;
+  margin-top: 50px;
+}
+
+.container {
+  display: flex;
+  width: 100%; 
+}
+
+.container .card {
+  flex: 0 0 100%; 
+  align-items: center;
+  overflow: hidden;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #009B60, #009B60);
+  width: 100%;
+}
+
+.card .card__content {
+  gap: 5px; 
+  padding: 10px; 
+}
+
+.card .card__content .card__title {
+  font-size: 24px; 
+  line-height: 28px;
+}
+
+.card .card__content .card__describe {
+  font-size: 14px; 
+}
+
+.content h1 {
+  padding-right: 0%; 
+}
+
+.content p {
+  padding-right: 0%; 
+}
+}

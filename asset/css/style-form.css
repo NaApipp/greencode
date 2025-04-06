@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/*----------Navbar Fixed Top----------*/
+.fixed-top{position:fixed;top:0;right:0;left:0;z-index:1030}
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body {
+font-family: 'Inter', sans-serif;
+}
+
+.container-test {
+    background-color: transparent;
+    padding: 20px;
+    
+  }
+  
+  .form {
+    display: flex;
+    justify-content: center; /* Pusatkan secara horizontal */
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .login {
+    justify-content: center;
+    width: 680px;
+    background-color: #ffffff;
+    border-radius: 5px;
+  }
+  
+  .hader {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 30px;
+  }
+  
+  
+  .hader .top {
+    font-size: 1.9rem;
+    color: #000;
+    font-weight: bold;
+  }
+  
+  .hader .top::after {
+    content: "";
+      display: block;
+      width: 200px;
+      height: 2px;
+      background-color: #000;
+      margin: 2px auto;
+      margin-top: 20px;  
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    padding: 30px;
+  }
+  form input {
+    height: 50px;
+    outline: none;
+    border: 1px solid #cccccc;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 8px;
+  }
+  form input[type="button"] {
+    background-color: rgba(17, 17, 226, 0.562);
+    color: #ffffff;
+    font-size: 17px;
+  }
+  
+  select {
+    width: 100%; /* Lebar penuh */
+    height: 50px;
+    padding: 10px;
+    border: 2px solid grey; /* Warna border hijau */
+    border-radius: 5px; /* Membuat sudut melengkung */
+    background-color: #fff; /* Warna latar belakang putih */
+    font-size: 16px;
+    color: #333; /* Warna teks */
+    cursor: pointer;
+    outline: none; /* Menghilangkan outline saat klik */
+    }
+    
+    /* Style untuk opsi di dalam dropdown */
+    option {
+    padding: 10px;
+    background: #fff;
+    color: #333;
+    }
+  
+    .trash {
+      display: flex;
+      flex-direction: row;
+      gap: 15px;
+    }
+    .berat-sampah {
+      display: flex;
+      flex-direction: column;
+      height: min-content
+    }
+    .jenis-sampah {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+  
+  button {
+  margin-top: 20px;
+  background: #fbca1f;
+  font-family: inherit;
+  padding: 0.6em 1.3em;
+  font-weight: 900;
+  font-size: 18px;
+  border: 3px solid black;
+  border-radius: 0.4em;
+  box-shadow: 0.1em 0.1em;
+  cursor: pointer;
+  }
+  
+  button:hover {
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em;
+  }
+  
+  button:active {
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em;
+  }
+
+@media screen and (max-width: 767px) {
+    .hader .top {
+        line-height: 25px;
+        font-size: 1.5rem;
+        padding: 10px;
+      }
+      .hader p {
+        padding-top: 20px;
+        line-height: 20px;
+      }
+      .trash {
+        flex-direction: column;
+      }
+}
+

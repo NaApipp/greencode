@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Title-->
+    <title>GreenCode | Berita </title>
+
+    <!--Connect To CSS-->
+    <link rel="stylesheet" href="asset/css/style-berita.css">
+    <link rel="stylesheet" href="asset/css/style.css">
+
+    <!--setting icon footer-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="asset\image\img-logo\Logo.png" type="image/x-icon">
+</head>
+
+<style>
+  .hero-berita{
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 10.0), rgba(0, 0, 0, 0)), url('asset/image/bg-image/hospital.jpg');
+    }
+</style>
+<body>
+  <!--Navbar Start-->
+  <div class="main-container">
+  <section id="berita" class="hero-berita">
+  <nav class="navbar navbar-expand-sm bg-light navbar-dark fixed-top">
+    <div class="container-fluid">
+      <img src="asset\image\img-logo\Logo.png" alt="Avatar Logo" style="width:40px;" class="rounded-pill">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item"> <!--Nav Item 1-->
+            <a class="nav-link" class="scroll-link" href="index.html#beranda" Style="color: black;">Beranda</a>
+          </li>
+          <li class="nav-item"> <!--Nav Item 2-->
+            <a class="nav-link" class="scroll-link" href="index.html#keuntungan" Style="color: black;">Keuntungan</a>
+          </li>
+          <li class="nav-item"> <!--Nav Item 3-->
+            <a class="nav-link" href="#berita-utama"  Style="color: black;">Berita</a>
+          </li>
+          <li class="nav-item"> <!--Nav Item 4-->
+            <a class="nav-link" href="index.html#about-section" Style="color: black;">Tentang</a>
+          </li>
+          <li class="nav-item"> <!--Nav Item 5-->
+            <a  class="nav-link" href="kelola-sampah.html"  Style="color: black;">Kelola Sampah</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+      <!--Navbar End-->
+
+      <!--HEAD BERITA-->
+        <div class="main-container"></div>
+          <div class="content-berita">
+        <div data-aos="zoom-in" data-aos-duration="1000"></div>
+        <h1>Temuan Potongan Kaki Bekas Amputasi di Semarang, Tergolong Limbah B3</h1>
+        <p>Temuan potongan kaki di Pantai Marina, Kota Semarang, yang sempat menggegerkan warga......</p>
+        <a href="https://regional.kompas.com/read/2024/07/18/145620378/temuan-potongan-kaki-bekas-amputasi-tergolong-limbah-b3-dinas-kesehatan" target="_blank" class="btn-berita">Lihat Selengkapnya</a>
+      </div>  
+    </div>                  
+          </div>
+        </div>
+      </div>
+    </div>
+        </section>
+
+        <section id="berita-utama">
+          <div class="main-container">
+          <header>
+            <div data-aos="fade-down" data-aos-duration="1000">
+            <h1>Berita <span class="highlight">Terkini</span></h1>
+            </div>
+          </header>
+          <main class="news-container">
+            <!-- BERITA 1 -->
+            <div class="news-item">
+              <img src="asset\image\img-berita\berita1.jpg" alt="Festival Ciliwung 2024">
+              <h2>"Festival Ciliwung 2024 Kumpulkan 30.744 kg Sampah-Tanam 200 Pohon"</h2>
+              <p>PT Pertamina (Persero) dengan Kementerian Lingkungan Hidup/Badan Pengendalian Lingkungan Hidup telah sukses menggelar Festival Ciliwung 2024.</p>
+              <button style="border-radius: 15px;"  onclick="redirect('https://news.detik.com/berita/d-7696213/festival-ciliwung-2024-kumpulkan-30-744-kg-sampah-tanam-200-pohon')">Lihat Selengkapnya</button>
+              <script>
+                function redirect(url) {
+                  window.open(url, '_blank'); // Membuka URL di tab baru
+                }
+              </script>
+            </div>
+            <!-- BERITA 2 -->
+            <div class="news-item">
+              <img src="asset\image\img-berita\berita2.jpg" alt="Dedi Mulyadi"> <!--GAMBAR BERITA-->
+              <h2>"Dedi Mulyadi Bicara Solusi Atasi Masalah Sampah di Jabar"</h2> <!--JUDUL BERITA-->
+              <p>Dedi Mulyadi, menyampaikan apresiasi atas rencana pembangunan pabrik pengolahan sampah dan limbah B3 di Desa Cilangkap, Kecamatan Babakancikao.....</p> <!--PENJELASAN BERITA-->
+              <button style="border-radius: 15px;" onclick="redirect('https://www.detik.com/jabar/pilkada/d-7566871/dedi-mulyadi-bicara-solusi-atasi-masalah-sampah-di-jabar')">Lihat Selengkapnya</button> 
+              <script>
+                function redirect(url) {
+                  window.open(url, '_blank'); // Membuka URL di tab baru
+                }
+              </script>
+            </div>
+            <!-- BERITA 3 -->
+            <div class="news-item">
+              <img src="asset\image\img-berita\berita3-persegi.jpg" alt="Inovasi Pengelolaan Limbah"> <!--GAMBAR BERITA-->
+              <h2>"Inovasi Pengelolaan Limbah, Wujudkan Komitmen Net-Zero Emission 2060"</h2> <!--JUDUL BERTA-->
+              <p>Pemerintah juga mendorong kerja sama dan kolaborasi dari seluruh aspek untuk memaksimalkan perannya agar menghasilkan manfaat yang meluas sehingga.......</p> <!--PENJELASAN BERITA-->
+              <button style="border-radius: 15px;"  onclick="redirect('https://news.detik.com/berita/d-7494566/inovasi-pengelolaan-limbah-wujudkan-komitmen-net-zero-emission-2060')">Lihat Selengkapnya</button>
+              <script>
+                function redirect(url) {
+                  window.open(url, '_blank'); // Membuka URL di tab baru
+                }
+              </script>
+            </div>
+            <!-- BERITA 4 -->
+            <div class="news-item">
+              <img src="asset\image\img-berita\berita4.jpg" alt="Festival Like 2"> <!--GAMBAR BERITA-->
+              <h2>"KLHK Bahas Pentingnya Pengelolaan Limbah B3 untuk Pelaku Usaha"</h2> <!--JUDUL BERITA-->
+              <p>Pemerintah Indonesia menargetkan pengelolaan sampah 100% pada tahun 2025. Untuk mencapai target tersebut, Kementerian Lingkungan Hidup dan.....</p> <!--PENJELASAN BERITA-->
+              <button style="border-radius: 15px;"  onclick="redirect('https://news.detik.com/berita/d-7474560/klhk-bahas-pentingnya-pengelolaan-limbah-b3-untuk-pelaku-usaha')">Lihat Selengkapnya</button>
+              <script>
+                function redirect(url) {
+                  window.open(url, '_blank'); // Membuka URL di tab baru
+                }
+              </script>
+            </div>
+            <!-- BERITA 5 -->
+            <div class="news-item">
+              <img src="asset\image\img-berita\berita5.jpeg" alt="Kunjungan Ma'ruf Amin"> <!--GAMBAR BERITA-->
+              <h2>"Kunker ke Jatim, Ma’ruf Amin Akan Tinjau Pabrik Pengolahan Limbah B3"</h2> <!--GAMBAR BERITA-->
+              <p>Dalam kunjungannya beliau Meninjau pabrik pengolahan limbah B3 Melihat langsung proses pengelolaan limbah berbahaya dan beracun.</p> <!--PENJELASAN BERITA-->
+              <button style="border-radius: 15px;"  onclick="redirect('https://news.detik.com/berita/d-7410897/kunker-ke-jatim-maruf-amin-akan-tinjau-pabrik-pengolahan-limbah-b3')">Lihat Selengkapnya</button>
+              <script>
+                function redirect(url) {
+                  window.open(url, '_blank'); // Membuka URL di tab baru
+                }
+              </script>
+            </div>
+            <!-- BERITA 6 -->
+            <div class="news-item">
+              <img src="asset\image\img-berita\berita6.jpg" alt="Fasilitas Pengelolaan Limbah"> <!--GAMBAR BERITA-->
+              <h2>"Fasilitas Pengelolaan Limbah B3 dan Non B3 Kini Hadir di Lamongan"</h2> <!--JUDUL-->
+              <p>PT Dowa Eco System Indonesia (DESI) baru saja meresmikan fasilitas pengolahan limbah B3 dan non-B3 di Lamongan, Jawa Timur. Peresmian ini diharapkan.....</p> <!--PENJELASAN BERITA-->
+              <button style="border-radius: 15px;"  onclick="redirect('https://money.kompas.com/read/2023/01/27/211434426/fasilitas-pengelolaan-limbah-b3-dan-non-b3-kini-hadir-di-lamongan')">Lihat Selengkapnya</button>
+              <script>
+                function redirect(url) {
+                  window.open(url, '_blank'); // Membuka URL di tab baru
+                }
+              </script>
+            </div>
+             <!-- BERITA 7 -->
+             <div class="news-item">
+              <img src="asset\image\img-berita\berita7.jpg" alt="Kunjungan Ma'ruf Amin"> <!--GAMBAR BERITA-->
+              <h2>"Bangun Pengelolaan Limbah B3, Penjagub Gorontalo – Kementrian LHK Teken Kesber"</h2> <!--GAMBAR BERITA-->
+              <p>Guna mewujudkan pembangunan pengelolaan limba bahan berbahaya dan beracun (limbah B3), Pemerintah Provinsi Gorontalo bekerjasama dengan.......</p> <!--PENJELASAN BERITA-->
+              <button style="border-radius: 15px;"  onclick="redirect('https://berita.gorontaloprov.go.id/2023/10/12/bangun-pengelolaan-limbah-b3-penjagub-gorontalo-kementrian-lhk-teken-kesber/')">Lihat Selengkapnya</button>
+              <script>
+                function redirect(url) {
+                  window.open(url, '_blank'); // Membuka URL di tab baru
+                }
+              </script>
+            </div>
+            <!-- BERITA 8 -->
+             <div class="news-item">
+              <img src="asset\image\img-berita\berita8.jpg" alt="Kunjungan Ma'ruf Amin"> <!--GAMBAR BERITA-->
+              <h2>"KLHK Ajak Pemerintah Daerah untuk Update Isu Terkini dalam Pengelolaan Sampah B3"</h2> <!--GAMBAR BERITA-->
+              <p>Dinamika pembangunan global terkini menuntut adanya peralihan ke aktivitas ekonomi yang lebih hijau baik dari kegiatan sektor energi, industri, lahan, kelautan dan.......</p> <!--PENJELASAN BERITA-->
+              <button style="border-radius: 15px;"  onclick="redirect('https://ppid.menlhk.go.id/berita/infografis/7784/klhk-ajak-pemerintah-daerah-dan-dunia-usaha-untuk-update-isu-terkini-dalam-pengelolaan-sampah-limbah-dan-b3')">Lihat Selengkapnya</button>
+              <script>
+                function redirect(url) {
+                  window.open(url, '_blank'); // Membuka URL di tab baru
+                }
+              </script>
+            </div>
+          </main>
+        </div>
+        </section>
+
+
+<!------------SECTION Footer-------------->
+<section id="footer">
+<div class="main-container">
+  
+  <footer class="footer">
+    <!--LOGO DAN NAME TAG footer-->
+    <div data-aos="fade-down" data-aos-duration="1000">
+      <div class="logo-container">
+        <img src="asset\image\img-logo\logo-putih.png" alt="Avatar Logo" style="width:40px;" class="rounded-pill">
+        <span class="logo-text">GreenCode</span>
+      </div>
+    </div>
+    <!--INFO CONTACT-->
+    <div class="footer-content">
+      <div data-aos="fade-right" data-aos-duration="1000">
+      <div class="footer-section location">
+        <h3 class="judul-footer">Lokasi</h3>
+        <ul>
+          <li>Semarang</li>
+          <li>Kendal</li>
+          <li>Batang</li>
+          <li>Yogyakarta</li>
+        </ul>
+      </div>
+    </div>
+
+    <div data-aos="fade-up" data-aos-duration="1000">
+      <div class="footer-section hours">
+        <h3>Jam Pelayanan</h3>
+        <ul>
+          <li>Senin - Kamis: 07.00 - 15.00 WIB</li>
+          <li>Jumat: 07.00 - 11.30 WIB</li>
+          <li>Minggu - Sabtu: 08.00 - 14.00 WIB</li>
+        </ul>
+      </div>
+    </div>
+
+    <div data-aos="fade-left" data-aos-duration="1000">
+      <div class="footer-section contact">
+        <h3>Hubungi Kami</h3>
+        <ul>
+          <li><i class="fas fa-phone"></i> +62 8888 34214043</li>
+          <li> <a href="mailto:nabilapipp@gmail.com" style="color: white;"><i class="fas fa-envelope"></i>GreenCodeTeam@gmail.com</a></li>
+          <li><i class="fas fa-map-marker-alt"></i> Jl. Soekarno-Hatta, Brangsong, Kec. Brangsong,<br> Kabupaten Kendal, Jawa Tengah 51318</li>
+        </ul>
+      </div>
+    </div>
+    </div>
+
+    <div class="footer-bottom" >
+      <p >&copy; 2024 GreenCode Team</p> <!--COPYRIGHT ITEM-->
+    </div>
+    </div>
+
+  </footer>
+</div>
+</section>
+
+
+      <!--AOS Script-->
+
+
+</body>
+</html>
